@@ -1,11 +1,11 @@
 # DUgen
 like agedu but web-based javascript
 
-This was created to run off file listing output from spectrum scale's policy engine. 
+This was created to interactively visualize file listing output from spectrum scale's policy engine. 
 
 ### To create the data:
  - create an output directory for all the files : ex: mkdir myoutput
- - runPolicy.pl [path_to_analyze] [outputf_file]
+ - runPolicy.pl [path_to_analyze] [output_dir]
  for example: runPolicy.pl /home /tmp/dugen
  - you may need to install perl modules such as Parallel::ForkManager
  - For the Spectrum Scale Policy Engine, you should set the appropriate nodeclass to run the polcy on. This is at the top of runPolicy.pl:
