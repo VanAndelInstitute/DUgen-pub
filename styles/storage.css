@@ -1,0 +1,11 @@
+.chart-container {
+    position: relative;
+    height: 95%;
+    padding: 0 1%;
+}
+
+.footer {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

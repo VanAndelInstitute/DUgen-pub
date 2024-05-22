@@ -1,0 +1,14 @@
+RULE 'mmfind'
+	LIST 'mmfindList'
+	DIRECTORIES_PLUS
+	SHOW(
+		VARCHAR(CREATION_TIME)  || ' ' ||
+		VARCHAR(MODIFICATION_TIME)  || ' ' ||
+		VARCHAR(ACCESS_TIME)  || ' ' ||
+		VARCHAR(USER_ID)  || ' ' ||
+		VARCHAR(GROUP_ID)  || ' ' ||
+		VARCHAR(MODE)  || ' ' ||
+		VARCHAR(FILE_SIZE)  || ' ' ||
+		VARCHAR(KB_ALLOCATED)
+
+	)

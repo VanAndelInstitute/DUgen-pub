@@ -1,0 +1,166 @@
+html, body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #005a9b;
+    font-family: sans-serif;
+}
+
+nav {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 55px;
+    width: 100%;
+    border: white 10px solid;
+}
+
+nav * {
+    display: block;
+}
+
+nav .title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content {
+    box-sizing: border-box;
+    height: 100vh;
+    padding-top: 70px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.back-arrow {
+    float: left;
+    position: absolute;
+    width: 5em;
+    height: 5em;
+    margin-top: -1em;
+    filter: brightness(0) invert(1);
+}
+
+.parent-chart-container {
+    height: 12em;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+}
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+.col-node { width: 12.5%; }
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+#settings {
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.primary-btn,
+.secondary-btn {
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: rgba(140, 203, 255, 0.9);
+    border: rgb(49, 162, 255) 1px solid;
+}
+
+.secondary-btn {
+    background-color: rgba(200, 200, 200, 0.9);
+    border: rgb(150, 150, 150) 1px solid;
+}
+
+label {
+    display: block;
+    color: #495057;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1900px) {
+    .row [class*="col-node"] {
+        width: 16.66% !important;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .row [class*="col-node"] {
+        width: 25% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .row [class*="col-node"] {
+        width: 33.33% !important;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .row [class*="col-"] {
+        width: 100% !important;
+    }
+
+    label,
+    input,
+    select,
+    .primary-btn,
+    .secondary-btn {
+        font-size: 2em;
+    }
+}
