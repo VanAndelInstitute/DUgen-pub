@@ -5,7 +5,7 @@ This was created to interactively visualize file listing output from spectrum sc
 
 ### To create the data:
  - create an output directory for all the files : ex: mkdir myoutput
- - runPolicy.pl [path_to_analyze] [output_dir]
+ - server/runPolicy.pl [path_to_analyze] [output_dir]
  for example: runPolicy.pl /home /tmp/dugen
  - you may need to install perl modules such as Parallel::ForkManager
  - For the Spectrum Scale Policy Engine, you should set the appropriate nodeclass to run the polcy on. This is at the top of runPolicy.pl:
@@ -51,8 +51,8 @@ This was created to interactively visualize file listing output from spectrum sc
             },
             {
                 "dir": "/dirB",
-                "size": 200,
-                "coldsize": 400,
+                "size": 400,
+                "coldsize": 200,
                 "children": [
                     
                 ]
